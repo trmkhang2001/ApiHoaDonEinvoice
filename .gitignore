@@ -1,0 +1,47 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+
+# Build
+dist/
+build/
+
+# PM2
+.pm2/
+
+# VSCode
+.vscode/
+
+# Mac
+.AppleDouble
+.LSOverride
+
+# Temporary files
+tmp/
+temp/
+
+# Optional npm cache
+.npm
