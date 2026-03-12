@@ -49,27 +49,26 @@ async function createInvoice(customer) {
 
     const body = {
         template_code: "1",
-        invoice_series: "C26TSE",
+        invoice_series: "C26TMN",
         issued_date: moment().format("YYYY-MM-DD HH:mm:ss"),
         currency: "VND",
-        provider_account_id: "6c438495-151a-11f1-b21a-a6006ab65aca",
+        provider_account_id: "8fbe78dd-1619-11f1-b21a-a6006ab65aca",
         payment_method: "TM/CK",
         is_draft: false,
         buyer: {
             type: "personal",
             name: customer.name,
-            address: "",
+            address: "Người mua không cung cấp thông tin",
             email: customer.email,
-            phone: customer.phone,
-            buyer_code: "DH" + Date.now()
+            phone: customer.phone
         },
         items: [
             {
                 line_number: 1,
                 line_type: 1,
                 item_code: "SP001",
-                item_name: "Webinar Bồ Tát Tương Lai",
-                unit: "vé",
+                item_name: "Webinar Dạy con Bi-Trí-Dũng",
+                unit: "Buổi",
                 quantity: 1,
                 unit_price: 185185,
                 tax_rate: 8
