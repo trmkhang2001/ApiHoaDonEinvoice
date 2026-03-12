@@ -4,8 +4,8 @@ const moment = require("moment");
 let accessToken = null;
 let tokenExpiredAt = null;
 
-const username = "EINV-TEST-05ZTDSVL16XKVKZY";
-const password = "8911e183c3c2ce8b1659fab2d38f8c22";
+const username = "EINV-LIVE-FYCC6SNHDPDG6NIR";
+const password = "82cdc98da0a61eead79cae799c2cf72c";
 
 async function getToken() {
     try {
@@ -16,7 +16,7 @@ async function getToken() {
         }
 
         const res = await axios.post(
-            "https://einvoice-api-sandbox.sepay.vn/v1/token",
+            "https://einvoice-api.sepay.vn/v1/token",
             {},
             {
                 auth: {
@@ -81,7 +81,7 @@ async function createInvoice(customer) {
     try {
 
         const res = await axios.post(
-            "https://einvoice-api-sandbox.sepay.vn/v1/invoices/create",
+            "https://einvoice-api.sepay.vn/v1/invoices/create",
             body,
             {
                 headers: {
@@ -104,7 +104,7 @@ async function createInvoice(customer) {
             token = await getToken();
 
             const res = await axios.post(
-                "https://einvoice-api-sandbox.sepay.vn/v1/invoices/create",
+                "https://einvoice-api.sepay.vn/v1/invoices/create",
                 body,
                 {
                     headers: {
