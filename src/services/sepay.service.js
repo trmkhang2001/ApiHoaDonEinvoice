@@ -49,7 +49,7 @@ async function createInvoice(customer) {
 
     const body = {
         template_code: "1",
-        invoice_series: "C26TMN",
+        invoice_series: "C26MMN",
         issued_date: moment().format("YYYY-MM-DD HH:mm:ss"),
         currency: "VND",
         provider_account_id: "8fbe78dd-1619-11f1-b21a-a6006ab65aca",
